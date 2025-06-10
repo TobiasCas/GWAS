@@ -559,7 +559,7 @@ par(mfrow = c(1, 5), mar = c(4, 4, 4, 2))
 
 # LASSO LM
 plot(y_test_lm, y_pred_lasso_lm,
-     main = paste0("LASSO LM (R² = ", round(lasso_r2_lm, 2), ")"),
+     main = "LASSO LM (R² = ", round(lasso_r2_lm, 2), ")",
      xlab = "Actual Height", ylab = "Predicted Height",
      xlim = c(lim_min, lim_max), ylim = c(lim_min, lim_max),
      pch = 19,
@@ -571,7 +571,7 @@ grid()
 
 # LASSO MLM
 plot(y_test_mlm, y_pred_lasso_mlm,
-     main = paste0("LASSO MLM (R² = ", round(lasso_r2_mlm, 2), ")"),
+     main = "LASSO MLM (R² = ", round(lasso_r2_mlm, 2), ")",
      xlab = "Actual Height", ylab = "Predicted Height",
      xlim = c(lim_min, lim_max), ylim = c(lim_min, lim_max),
      pch = 19,
@@ -582,7 +582,7 @@ grid()
 
 # Latent LM
 plot(y_test_lm, latent_pred_soft_lm,
-     main = paste0("Latent LM (R² = ", round(latent_r2_soft_lm, 2), ")"),
+     main = "Latent LM (R² = ", round(latent_r2_soft_lm, 2), ")",
      xlab = "Actual Height", ylab = "Predicted Height",
      xlim = c(lim_min, lim_max), ylim = c(lim_min, lim_max),
      pch = 19,
@@ -594,7 +594,7 @@ grid()
 
 # Latent MLM
 plot(y_test_mlm, latent_pred_soft_mlm,
-     main = paste0("Latent MLM (R² = ", round(latent_r2_soft_mlm, 2), ")"),
+     main = "Latent MLM (R² = ", round(latent_r2_soft_mlm, 2), ")",
      xlab = "Actual Height", ylab = "Predicted Height",
      xlim = c(lim_min, lim_max), ylim = c(lim_min, lim_max),
      pch = 19,
@@ -606,7 +606,7 @@ grid()
 
 # PRS Model (external)
 plot(test$PHENO, y_pred_prs,
-     main = paste0("External PRS (R² = ", round(PRS_r2, 2), ")"),
+     main = "External PRS (R² = ", round(PRS_r2, 2), ")",
      xlab = "Actual Height", ylab = "Predicted Height",
      xlim = c(lim_min, lim_max), ylim = c(lim_min, lim_max),
      pch = 19,
